@@ -1,0 +1,20 @@
+{
+  "name": "dsh-flexsim-mcp",
+  "version": "1.2.0",
+  "license": "MIT",
+  "description": "FlexSim automation for DeepSeek Harness using the official MCP client bridge and a local Windows companion.",
+  "type": "module",
+  "main": "./dsh/index.mjs",
+  "exports": {".": "./dsh/index.mjs", "./package.json": "./package.json"},
+  "files": ["dsh", "cordis.patch.yml", "flexsim-mcp", "companion", "scripts", "README.md", "CHANGELOG.md", "LICENSE"],
+  "dsh": {"bundle": {"patch": "./cordis.patch.yml"}},
+  "engines": {"node": ">=22", "dsh": ">=0.2.1-rc.3 <0.3.0"},
+  "peerDependencies": {"@deepseek-ai/dsh-mcp-client": ">=0.1.0-rc.2", "@deepseek-ai/schemastery": ">=3.18.1"},
+  "peerDependenciesMeta": {"@deepseek-ai/dsh-mcp-client": {"optional": true}, "@deepseek-ai/schemastery": {"optional": true}},
+  "scripts": {"test": "node --test tests/bridge.test.mjs"},
+  "author": "w2cemm",
+  "repository": {"type": "git", "url": "git+https://github.com/w2cemm/dsh-flexsim-mcp.git"},
+  "homepage": "https://github.com/w2cemm/dsh-flexsim-mcp",
+  "os": ["win32"],
+  "keywords": ["dsh", "deepseek-harness", "flexsim", "mcp", "windows"]
+}

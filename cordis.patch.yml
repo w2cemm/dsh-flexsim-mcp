@@ -1,0 +1,5 @@
+# DSH resolves this adapter from the installed bundle. No per-machine paths.
+- insert:
+    - id: flexsim-mcp-bridge
+      name: dsh-flexsim-mcp
+      config: {}

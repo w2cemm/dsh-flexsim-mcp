@@ -1,0 +1,14 @@
+.git/
+.local/
+**/__pycache__/
+**/*.pyc
+**/*.log
+**/runtime/
+companion/spool/
+companion/logs/
+companion/status.json
+companion/*.flag
+companion/*.png
+companion/*.tmp
+dist/
+tests/
